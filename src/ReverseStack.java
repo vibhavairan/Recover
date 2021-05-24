@@ -30,8 +30,8 @@ public class ReverseStack {
      /*  for(Integer e : stack)
             System.out.print(e+" ");*/
         reverse(helper,stack,0);
-      /*  System.out.println(" ");
+        System.out.println(" ");
         for(Integer e : stack)
-            System.out.print(e+" ");*/
+            System.out.print(e+" ");
     }
 }

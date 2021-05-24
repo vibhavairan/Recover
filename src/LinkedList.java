@@ -1,4 +1,4 @@
-public class LinkedList {
+public class LinkedList<I extends Number> {
     private class Node{
         int data;
         Node next;
@@ -149,7 +149,7 @@ public class LinkedList {
     }
     public static void main(String[] args)
     {
-        LinkedList list = new LinkedList();
+        LinkedList<Number> list = new LinkedList<Number>();
         list.addLast(10);
         list.addLast(20);
         list.addLast(30);

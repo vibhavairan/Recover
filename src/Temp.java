@@ -1,32 +1,43 @@
-import java.util.Scanner;
+import java.util.*;
+class Student implements Comparable {
+    int id;
+    String name;
 
+    @Override
+    public int compareTo(Object o) {
+        Student a = (Student) o;
+        if(this.id>a.id)
+            return 1;
+        else
+            return -1;
+    }
+}
 public class Temp {
-    public static void main(String[] args){
-       Scanner sc = new Scanner(System.in);
-       int N = sc.nextInt();
-        int K = sc.nextInt();
-        int y=0;
-        int cc=0;
-        int a[] = new int[N];
-        for(int x=0;x<N;x++)
-            a[x]=sc.nextInt();
-        for(int x=0;x<N-1;x++)
+
+
+
+    public static void main(String args[])
+    {
+       /* Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        ArrayList<Student> list = new ArrayList<>();
+
+        for(int x=0;x<n;x++)
         {
-            System.out.println(x);
-            int diff = Integer.MAX_VALUE;
-            int idx = -1;
-            for(y=x+1;y<=x+K&&y<N;y++)
-            {
-                System.out.println(x+" "+y);
-                int abs = Math.abs(a[x] - a[y]);
-                if(diff> abs){
-                    diff = abs;
-                    idx = y;
-                }
-            }
-            cc = cc + diff;
-            x = idx;
+            Student temp = new Student();
+            temp.id = sc.nextInt();
+            temp.name = sc.next();
+            list.add(temp);
         }
-        System.out.println(cc);
+
+        Collections.sort(list);
+
+        for(Student e : list)
+        {
+            System.out.println(e.id);
+            System.out.println(e.name);
+        }*/
+        String s = "Hello";
+        //System.out.println(s.charAt(12));
     }
 }

@@ -34,7 +34,5 @@ public class CoinChangeNotInfinite {
         int amount = sc.nextInt();
         List<List<Integer>> lists = new ArrayList<>();
         calculate(a,0,amount,new ArrayList<>(), lists);
-      /*  for (List<Integer> i : lists)
-            System.out.println(i);*/
     }
 }
