@@ -13,6 +13,7 @@ public class Subsets {
             ans.add(output);
         else
         {
+
             List<Integer> output2 = new ArrayList<>(output);
             output2.add(num[x]);
             x++;
